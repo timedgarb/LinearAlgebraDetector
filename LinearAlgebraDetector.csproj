@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <Nullable>enable</Nullable>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <LangVersion>preview</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\markers.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MainForm.Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ResultForm.Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MarkerEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MarkerEditorForm.Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\HistoryForm.Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Core\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Utils\" />
+    <Folder Include="UI\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Docs\" />
+  </ItemGroup>
+</Project>
