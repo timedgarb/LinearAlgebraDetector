@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "name": "Linear Algebra AI Detector",
+    "version": "1.0.0",
+    "developer": "Timed Garb",
+    "company": "BRAg inc.",
+    "discipline": "linear_algebra"
+  },
+  "markers": [
+    {
+      "id": "MATH-001",
+      "pattern": "\\btan\\s*\\(",
+      "weight": 8,
+      "category": "trigonometry",
+      "description": "Использование tan() вместо российского стандарта tg()",
+      "severity": "critical"
+    },
+    {
+      "id": "MATH-002",
+      "pattern": "\\bcot\\s*\\(",
+      "weight": 8,
+      "category": "trigonometry",
+      "description": "Использование cot() вместо российского стандарта ctg()",
+      "severity": "critical"
+    },
+    {
+      "id": "MATH-003",
+      "pattern": "\\bsec\\s*\\(",
+      "weight": 6,
+      "category": "trigonometry",
+      "description": "Использование sec() (редко используется в российских вузах)",
+      "severity": "medium"
+    },
+    {
+      "id": "MATH-004",
+      "pattern": "\\bcsc\\s*\\(",
+      "weight": 6,
+      "category": "trigonometry",
+      "description": "Использование csc() (редко используется в российских вузах)",
+      "severity": "medium"
+    },
+    {
+      "id": "MATH-005",
+      "pattern": "\\bexp\\s*\\(",
+      "weight": 4,
+      "category": "exponential",
+      "description": "Использование exp() вместо e^{}",
+      "severity": "medium"
+    },
+    {
+      "id": "MATH-006",
+      "pattern": "\\basin\\s*\\(",
+      "weight": 5,
+      "category": "trigonometry",
+      "description": "Использование asin() вместо arcsin()",
+      "severity": "medium"
+    },
+    {
+      "id": "MATH-007",
+      "pattern": "\\bacos\\s*\\(",
+      "weight": 5,
+      "category": "trigonometry",
+      "description": "Использование acos() вместо arccos()",
+      "severity": "medium"
+    },
+    {
+      "id": "MATH-008",
+      "pattern": "\\batan\\s*\\(",
+      "weight": 5,
+      "category": "trigonometry",
+      "description": "Использование atan() вместо arctg()",
+      "severity": "medium"
+    },
+    {
+      "id": "MATH-009",
+      "pattern": "\\barctan\\s*\\(",
+      "weight": 5,
+      "category": "trigonometry",
+      "description": "Использование arctan() вместо arctg()",
+      "severity": "medium"
+    },
+    {
+      "id": "LA-001",
+      "pattern": "\\beigenvalue\\b",
+      "weight": 8,
+      "category": "linear_algebra",
+      "description": "Англицизм: eigenvalue вместо 'собственное значение'",
+      "severity": "critical"
+    },
+    {
+      "id": "LA-002",
+      "pattern": "\\beigenvector\\b",
+      "weight": 8,
+      "category": "linear_algebra",
+      "description": "Англицизм: eigenvector вместо 'собственный вектор'",
+      "severity": "critical"
+    },
+    {
+      "id": "LA-003",
+      "pattern": "\\bbasis\\b",
+      "weight": 6,
+      "category": "linear_algebra",
+      "description": "Англицизм: basis вместо 'базис'",
+      "severity": "high"
+    },
+    {
+      "id": "LA-004",
+      "pattern": "null space",
+      "weight": 7,
+      "category": "linear_algebra",
+      "description": "Англицизм: null space вместо 'ядро'",
+      "severity": "high"
+    },
+    {
+      "id": "LA-005",
+      "pattern": "column space",
+      "weight": 7,
+      "category": "linear_algebra",
+      "description": "Англицизм: column space вместо 'пространство столбцов'",
+      "severity": "high"
+    },
+    {
+      "id": "LA-006",
+      "pattern": "row space",
+      "weight": 7,
+      "category": "linear_algebra",
+      "description": "Англицизм: row space вместо 'пространство строк'",
+      "severity": "high"
+    },
+    {
+      "id": "TEMP-001",
+      "pattern": "следует отметить",
+      "weight": 5,
+      "category": "template",
+      "description": "Канцелярский оборот, характерный для ИИ",
+      "severity": "medium"
+    },
+    {
+      "id": "TEMP-002",
+      "pattern": "в заключение",
+      "weight": 4,
+      "category": "template",
+      "description": "Шаблон вывода",
+      "severity": "medium"
+    },
+    {
+      "id": "TEMP-003",
+      "pattern": "таким образом",
+      "weight": 3,
+      "category": "template",
+      "description": "Шаблон вывода",
+      "severity": "low"
+    },
+    {
+      "id": "TEMP-004",
+      "pattern": "что и требовалось доказать",
+      "weight": 4,
+      "category": "template",
+      "description": "ИИ часто добавляет",
+      "severity": "medium"
+    },
+    {
+      "id": "LEX-001",
+      "pattern": "то есть",
+      "weight": 2,
+      "category": "lexical",
+      "description": "ИИ редко использует сокращение 'т.е.'",
+      "severity": "low"
+    },
+    {
+      "id": "LEX-002",
+      "pattern": "так как",
+      "weight": 2,
+      "category": "lexical",
+      "description": "ИИ редко использует сокращение 'т.к.'",
+      "severity": "low"
+    }
+  ]
+}
